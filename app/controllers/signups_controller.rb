@@ -35,11 +35,11 @@ class SignupsController < ApplicationController
         end
 
         def valid_params
-            params.permit(:name, :age)
+            params.permit(:camper_id, :activity_id, :time)
         end
 
         def not_found
-            render json: {error: "record not found"}, status: :not_found
+            render json: {error: "Signup not found"}, status: :not_found
         end
 
         def unprocessable_entity_response(invalid)

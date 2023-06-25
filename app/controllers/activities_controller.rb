@@ -35,11 +35,11 @@ class ActivitiesController < ApplicationController
         end
 
         def valid_params
-            params.permit(:name, :age)
+            params.permit(:name, :difficulty)
         end
 
         def not_found
-            render json: {error: "record not found"}, status: :not_found
+            render json: {error: "Activity not found"}, status: :not_found
         end
 
         def unprocessable_entity_response(invalid)

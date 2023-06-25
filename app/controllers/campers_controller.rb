@@ -39,7 +39,7 @@ class CampersController < ApplicationController
         end
 
         def not_found
-            render json: {error: "record not found"}, status: :not_found
+            render json: {error: "Camper not found"}, status: :not_found
         end
 
         def unprocessable_entity_response(invalid)

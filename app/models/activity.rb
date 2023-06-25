@@ -9,8 +9,4 @@ class Activity < ApplicationRecord
         less_than_or_equal_to: 10
     }
 
-    def camper
-        x = Activity.find(params[:id])
-        x.campers
-    end
 end
